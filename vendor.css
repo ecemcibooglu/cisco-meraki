@@ -1,0 +1,487 @@
+/* ---------- VENDOR CSS CHECKLIST: ------------------ *//*
+
+***** Required variables ******
+
+-—primary-color
+
+****** General ******
+
+Import necessary fonts, add scroll-behavior, body styling, and basic typography
+
+***** Buttons ******
+
+Include styling for the primary and / or secondary buttons, plus the form buttons
+
+#form-container button, #form-container button:hover, .sp-cta-btn and .sp-cta-btn:hover selectors should be included in the styling of the primary button, so the signup pages don’t break
+
+****** Additional sections ******
+
+styling for LOGO and NEWS POST
+
+****** Signup pages *******
+
+Make sure to set a dark color for the background of the signup page in the class .sp-dark-bg (in the signup page CSS - the color changes per vendor) and check if the primary-color matches it; otherwise set another variable color as the main color for the signup page.
+
+*/
+
+:root {
+    --primary-color: #00bceb;
+    --secondary-color: #0d274d;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url('https://assets.channext.eu/cisco/fonts/CiscoSansTTExtraLight%20%281%29.woff2')
+    format("woff2");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url('https://assets.channext.eu/cisco/fonts/CiscoSansTTExtraLightOblique.woff2')
+    format("woff2");
+  font-style: oblique;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url('https://assets.channext.eu/cisco/fonts/CiscoSansTTRegular%20%281%29.woff2') format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url('https://assets.channext.eu/cisco/fonts/CiscoSansTTRegularOblique.woff2')
+    format("woff2");
+  font-style: oblique;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url('https://assets.channext.eu/cisco/fonts/CiscoSansTTBold%20%281%29.woff2')
+    format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url('https://assets.channext.eu/cisco/fonts/CiscoSansTTHeavy.woff2') format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* - - - - - - - - - -menubar test - - - - - - - - - */
+
+a.dropdown-item, a.dropdown-item:focus, a.dropdown-item:hover{
+    padding: .5rem 1rem;
+    background:#fff;
+
+}
+a.navbar-light.navbar-nav.nav-link{
+    color: #0d274d!important;
+}
+
+/* - - - - - - - - - - START LAYOUT STYLING - - - - - - - - - - */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #58585b;
+    font-size:  16px;
+    font-family: CiscoSans, Arial, sans-serif;
+    line-height: 1.6;
+    font-weight:300 !important;
+}
+
+h1, h2, h3, h4 {
+    font-weight:700;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+
+h3 {
+    font-size: 28px;
+    line-height: 33px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+h1 {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height:30px;
+}
+
+
+h3 {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+h1 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+h3 {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+}
+
+a, a:visited {
+    color: #007493;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+a:hover, a:focus {
+    text-decoration: underline !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 0 0 15px;
+}
+
+.btn, a.btn, form button, #form-container button, .sp-cta-btn {
+    background-color: #00bceb;
+    border: 1px solid #00bceb;
+    border-radius: 100px;
+    color: white;
+    min-width: 140px;
+    text-align: center;
+    font-weight:400;
+}
+
+.btn:hover, form button:hover, #form-container button:hover, .sp-cta-btn:hover {
+    background-color: #33c9ef;
+}
+
+.sp-cta-btn, .sp-cta-btn:hover, .spp-cta-hover:visited {
+    color: #212529 !important;
+}
+
+.btn-sec, a.btn-sec{
+    background-color: transparent;
+    border: 1px solid #0175a2;
+    color: #0175a2!important;
+    border-radius: 100px;
+    min-width: 140px;
+    padding: 5px 20px 6px;
+    text-align: center;
+    font-weight:400;
+}
+
+.btn-sec:hover{
+    background-color: #18365a;
+    border: 1px solid #18365a;
+    color: #fff!important;
+}
+
+a.btn.white {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #0d274d;
+}
+
+a.btn.white:hover,
+a.btn.transparent-w:hover {
+    background-color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    color: #0d274d !important;
+}
+
+a.btn.transparent-w {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #FFF !important;
+}
+
+a.btn.transparent-b {
+    background-color: transparent;
+    border: 1px solid #0175a2;
+    color: #0175a2;
+}
+
+a.btn.transparent-b:hover {
+    background-color: #18365a;
+    border: 1px solid #18365a;
+    color: #fff !important;
+}
+
+.row-spacing {
+    padding:40px 0px;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.img-rounded {
+    line-height: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/*
+-------------------------------------------
+     colors
+-------------------------------------------
+*/
+
+.white {color:#fff;}
+.lgray1   {color:#f2f2f2}
+.lblue    {color:#f2fbfd}
+.gray      {color:#4d4c4c}
+.dblue     {color:#0d274d}
+.blue, .primary-color     {color:#00bceb}
+.green     {color:#6ebe4a}
+
+/*
+-------------------------------------------
+    background and border colors
+-------------------------------------------
+*/
+
+.lgray1-bg    {background-color:#f2f2f2}
+.lblue-bg, .light-background-color    {background-color:#f2fbfd}
+.gray-bg     {background-color:#4d4c4c}
+.dblue-bg, .background-color     {background-color:#0d274d; color:#fff;}
+.blue-bg     {background-color:#00bceb}
+.green-bg    {background-color:#6ebe4a}
+.box-shadow { box-shadow: 0px 0px 3px 0px #CCD2D6; z-index: 3; }
+
+/*
+-------------------------------------------
+     Styles
+-------------------------------------------
+*/
+
+.samenwerken-bg{
+    background:url(//cdn.channext.eu/cisco/collaboration-marquee-1600x480.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.samenwerken-bg h1, .netwerken-bg h1, .thuiswerken-bg h1{
+    font-size:3.8rem;
+}
+.rte-txt h3{
+    margin:10px 0px;
+}
+.thuiswerken-bg{
+    background:url(//cdn.channext.eu/cisco/B2P-Webex_Drive-1600x480.png) no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.netwerken-bg{
+    background:url(//cdn.channext.eu/cisco/networking-marquee.png) no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.bigger{font-size:38px;}
+
+.security-bg {
+    background:url(https://cdn.channext.eu/cisco/secureX/new/security.gif) no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+a.link:after {
+    border-right: solid 2px;
+    border-top: solid 2px;
+    content: '';
+    width: .6rem;
+    height: .6rem;
+    transform: rotate(45deg);
+    display: inline-block;
+    position: relative;
+    right: -px;
+    margin-right: -8px;
+}
+
+/* MODAL */
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 800px;
+    }
+}
+
+/* LOGO */
+
+.brand-logo {
+    max-height: 80px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo img {
+    max-height: inherit !important;
+    max-width: 100% !important;
+}
+
+.brand-logo img {
+  height: 80px;
+}
+
+/* NEWS POST */
+.img-responsive {
+width: 100% !important;
+height: 100% !important;
+min-height: 185px !important;
+}
+
+.tag-button {
+    background-color: white;
+    border-radius: 5px;
+    border: solid 2px #63B8FC;
+    color: #63B8FC;
+}
+
+.tag-button:hover {
+    background-color: #63B8FC;
+    border-radius: 5px;
+    border: solid 2px #63B8FC;
+    color: white !important;
+}
+
+.btn-link {
+    background-color: #00bceb;
+    border: 1px solid #00bceb;
+    color: white !important;
+}
+
+.btn-link:hover {
+    background-color: #00bceb;
+    border: 1px solid #00bceb;
+    color: white !important;
+}
+
+.jumbotron {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.jumbotron > * {
+    position: relative;
+    z-index: 10;
+}
+
+.jumbotron h1 {
+font-size: 2.6rem !important;
+color: white !important;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+.jumbotron h1 {
+font-size:2.1rem !important;
+}
+}
+
+@media screen and (max-width: 425px) {
+.jumbotron h1 {
+font-size: 1.5rem !important;
+}
+}
+
+.ck-content {
+    background: #fff;
+    margin-top: -30px;
+}
+
+.navbar-brand img {
+    max-width: 100px!important;
+}
+
+.brandcontainer h1 {
+margin: 0 0px !important;;
+}
+
+@media screen and (mmin-width: 992px) and (max-width: 1024px) {
+.brandcontainer h1 { 
+font-size: 1.5rem !important;
+}
+}
+
+
+@media screen and (max-width: 425px) {
+.brandcontainer h1 { 
+font-size: 2.3rem !important;
+}
+}
+
+@media screen and (max-width: 375px) {
+.brandcontainer h1 {
+font-size: 1.5rem !important;
+}
+}
+
+.dropdown .marker {
+width: 0px !important;
+}
